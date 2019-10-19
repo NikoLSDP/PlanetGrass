@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Grass: MonoBehaviour
 {
-    
-    void Start()
+    GameObject[] GrassGO;
+    void Awake()
     {
-        
     }
 
     // Update is called once per frame

@@ -27,7 +27,7 @@ public class PlayerRotation : MonoBehaviour
     void Update()
     {
      
-        if(joystick.Direction != Vector2.zero)
+        if(joystick.Direction != Vector2.zero && !GameManager.instance.GameOver)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, Angle(joystick.Direction)));
         }
